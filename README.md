@@ -11,8 +11,8 @@
 > 좌석을 클릭 후 자신의 이메일 입력. 
 > nodemailer를  통해 이메일로 A좌석의  탑승자가 이메일로 연락을 하고 싶어한다는 메일을 전송.
 ###### 파일 설명
-- main.js** > 사이트의 url에 따라서 어떤 함수를 호출할 지 안내.
-- page.js** > main.js를 통해 호출된 함수들이 정리되어 있는 파일.
-- template.js** > page.js에서 사용되는 template 및 함수들이 정리되어 있는 파일.
-- db.js** > node js의 mysqpl 모듈을 통해 db에 연결, 쿼리를 전송할 수 있게 정의해 놓은 파일.
-- mailsender.js** > node js의 nodemailer 모듈을 통해 메일을 전송할 수 있게 정의한 파일.
+- main.js > 사이트의 url에 따라서 어떤 함수를 호출할 지 안내.
+- page.js > main.js를 통해 호출된 함수들이 정리되어 있는 파일.
+- template.js > page.js에서 사용되는 template 및 함수들이 정리되어 있는 파일.
+- db.js > node js의 mysqpl 모듈을 통해 db에 연결, 쿼리를 전송할 수 있게 정의해 놓은 파일.
+- mailsender.js > node js의 nodemailer 모듈을 통해 메일을 전송할 수 있게 정의한 파일.
