@@ -1,3 +1,4 @@
+![home](https://user-images.githubusercontent.com/91775452/156975006-ff697790-e0cc-42bd-9071-36b2fd102f02.PNG)
 # Flimate
  계기 : 비행기에서 주변에 앉았던 사람과 연락을 하고 싶은 경우가 발생할 수 있겠다는 생각
  사이트 소개 : home으로 들어올 경우, 사용자가 탑승했던 항공편이 유효한 항공편인지 db에서 대조하여 판별.
