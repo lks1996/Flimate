@@ -1,0 +1,2139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" type="text/css" media="all" href='/data/201012/IJ12920904231853/jquery_air.css' />
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" media="all" href='/data/201012/IJ12920904231853/ie_fixes.css' />
+<![endif]-->
+<script type="text/javascript" src="/data/201012/IJ12920904231853/preset.js"></script>
+<script type="text/javascript" src="/data/201012/IJ12920904231853/jquery.js"></script>
+<script type="text/javascript" src="/data/201012/IJ12920904231853/global.js"></script>
+<title>jQuery Air</title>
+</head>
+<body>
+<div id="container">
+	<img src="/data/201012/IJ12920904231853/logo.gif" alt="jQuery Air" id="logo" />
+	<span id="info">
+		<strong>Charter Flight</strong><br />
+		Passenger Management
+	</span>
+	<ul id="airplane">
+		<li id="master">
+			<input type="checkbox" id="check_all" />
+			<label for="check_all">
+				All
+			</label>
+		</li>
+
+		<li class="seat_01 A"><a href="#row_01" title="01A">01A</a></li>
+		<li class="seat_01 B"><a href="#row_01" title="01B">01B</a></li>
+		<li class="seat_01 C"><a href="#row_01" title="01C">01C</a></li>
+		<li class="seat_01 D"><a href="#row_01" title="01D">01D</a></li>
+		<li class="seat_01 E"><a href="#row_01" title="01E">01E</a></li>
+		<li class="seat_01 F"><a href="#row_01" title="01F">01F</a></li>
+
+		<li class="seat_02 A"><a href="#row_02" title="02A">02A</a></li>
+		<li class="seat_02 B"><a href="#row_02" title="02B">02B</a></li>
+		<li class="seat_02 C"><a href="#row_02" title="02C">02C</a></li>
+		<li class="seat_02 D"><a href="#row_02" title="02D">02D</a></li>
+		<li class="seat_02 E"><a href="#row_02" title="02E">02E</a></li>
+		<li class="seat_02 F"><a href="#row_02" title="02F">02F</a></li>
+
+		<li class="seat_03 A"><a href="#row_03" title="03A">03A</a></li>
+		<li class="seat_03 B"><a href="#row_03" title="03B">03B</a></li>
+		<li class="seat_03 C"><a href="#row_03" title="03C">03C</a></li>
+		<li class="seat_03 D"><a href="#row_03" title="03D">03D</a></li>
+		<li class="seat_03 E"><a href="#row_03" title="03E">03E</a></li>
+		<li class="seat_03 F"><a href="#row_03" title="03F">03F</a></li>
+
+		<li class="seat_04 A"><a href="#row_04" title="04A">04A</a></li>
+		<li class="seat_04 B"><a href="#row_04" title="04B">04B</a></li>
+		<li class="seat_04 C"><a href="#row_04" title="04C">04C</a></li>
+		<li class="seat_04 D"><a href="#row_04" title="04D">04D</a></li>
+		<li class="seat_04 E"><a href="#row_04" title="04E">04E</a></li>
+		<li class="seat_04 F"><a href="#row_04" title="04F">04F</a></li>
+
+		<li class="seat_05 A"><a href="#row_05" title="05A">05A</a></li>
+		<li class="seat_05 B"><a href="#row_05" title="05B">05B</a></li>
+		<li class="seat_05 C"><a href="#row_05" title="05C">05C</a></li>
+		<li class="seat_05 D"><a href="#row_05" title="05D">05D</a></li>
+		<li class="seat_05 E"><a href="#row_05" title="05E">05E</a></li>
+		<li class="seat_05 F"><a href="#row_05" title="05F">05F</a></li>
+
+		<li class="seat_06 A"><a href="#row_06" title="06A">06A</a></li>
+		<li class="seat_06 B"><a href="#row_06" title="06B">06B</a></li>
+		<li class="seat_06 C"><a href="#row_06" title="06C">06C</a></li>
+		<li class="seat_06 D"><a href="#row_06" title="06D">06D</a></li>
+		<li class="seat_06 E"><a href="#row_06" title="06E">06E</a></li>
+		<li class="seat_06 F"><a href="#row_06" title="06F">06F</a></li>
+
+		<li class="seat_07 A"><a href="#row_07" title="07A">07A</a></li>
+		<li class="seat_07 B"><a href="#row_07" title="07B">07B</a></li>
+		<li class="seat_07 C"><a href="#row_07" title="07C">07C</a></li>
+		<li class="seat_07 D"><a href="#row_07" title="07D">07D</a></li>
+		<li class="seat_07 E"><a href="#row_07" title="07E">07E</a></li>
+		<li class="seat_07 F"><a href="#row_07" title="07F">07F</a></li>
+
+		<li class="seat_08 A"><a href="#row_08" title="08A">08A</a></li>
+		<li class="seat_08 B"><a href="#row_08" title="08B">08B</a></li>
+		<li class="seat_08 C"><a href="#row_08" title="08C">08C</a></li>
+		<li class="seat_08 D"><a href="#row_08" title="08D">08D</a></li>
+		<li class="seat_08 E"><a href="#row_08" title="08E">08E</a></li>
+		<li class="seat_08 F"><a href="#row_08" title="08F">08F</a></li>
+
+		<li class="seat_09 A"><a href="#row_09" title="09A">09A</a></li>
+		<li class="seat_09 B"><a href="#row_09" title="09B">09B</a></li>
+		<li class="seat_09 C"><a href="#row_09" title="09C">09C</a></li>
+		<li class="seat_09 D"><a href="#row_09" title="09D">09D</a></li>
+		<li class="seat_09 E"><a href="#row_09" title="09E">09E</a></li>
+		<li class="seat_09 F"><a href="#row_09" title="09F">09F</a></li>
+
+		<li class="seat_10 A"><a href="#row_10" title="10A">10A</a></li>
+		<li class="seat_10 B"><a href="#row_10" title="10B">10B</a></li>
+		<li class="seat_10 C"><a href="#row_10" title="10C">10C</a></li>
+		<li class="seat_10 D"><a href="#row_10" title="10D">10D</a></li>
+		<li class="seat_10 E"><a href="#row_10" title="10E">10E</a></li>
+		<li class="seat_10 F"><a href="#row_10" title="10F">10F</a></li>
+
+		<li class="seat_11 A"><a href="#row_11" title="11A">11A</a></li>
+		<li class="seat_11 B"><a href="#row_11" title="11B">11B</a></li>
+		<li class="seat_11 C"><a href="#row_11" title="11C">11C</a></li>
+		<li class="seat_11 D"><a href="#row_11" title="11D">11D</a></li>
+		<li class="seat_11 E"><a href="#row_11" title="11E">11E</a></li>
+		<li class="seat_11 F"><a href="#row_11" title="11F">11F</a></li>
+
+		<li class="seat_12 A"><a href="#row_12" title="12A">12A</a></li>
+		<li class="seat_12 B"><a href="#row_12" title="12B">12B</a></li>
+		<li class="seat_12 C"><a href="#row_12" title="12C">12C</a></li>
+		<li class="seat_12 D"><a href="#row_12" title="12D">12D</a></li>
+		<li class="seat_12 E"><a href="#row_12" title="12E">12E</a></li>
+		<li class="seat_12 F"><a href="#row_12" title="12F">12F</a></li>
+
+		<li class="seat_13 A"><a href="#row_13" title="13A">13A</a></li>
+		<li class="seat_13 B"><a href="#row_13" title="13B">13B</a></li>
+		<li class="seat_13 C"><a href="#row_13" title="13C">13C</a></li>
+		<li class="seat_13 D"><a href="#row_13" title="13D">13D</a></li>
+		<li class="seat_13 E"><a href="#row_13" title="13E">13E</a></li>
+		<li class="seat_13 F"><a href="#row_13" title="13F">13F</a></li>
+
+		<li class="seat_14 A"><a href="#row_14" title="14A">14A</a></li>
+		<li class="seat_14 B"><a href="#row_14" title="14B">14B</a></li>
+		<li class="seat_14 C"><a href="#row_14" title="14C">14C</a></li>
+		<li class="seat_14 D"><a href="#row_14" title="14D">14D</a></li>
+		<li class="seat_14 E"><a href="#row_14" title="14E">14E</a></li>
+		<li class="seat_14 F"><a href="#row_14" title="14F">14F</a></li>
+
+		<li class="seat_15 A"><a href="#row_15" title="15A">15A</a></li>
+		<li class="seat_15 B"><a href="#row_15" title="15B">15B</a></li>
+		<li class="seat_15 C"><a href="#row_15" title="15C">15C</a></li>
+		<li class="seat_15 D"><a href="#row_15" title="15D">15D</a></li>
+		<li class="seat_15 E"><a href="#row_15" title="15E">15E</a></li>
+		<li class="seat_15 F"><a href="#row_15" title="15F">15F</a></li>
+
+		<li class="seat_16 A"><a href="#row_16" title="16A">16A</a></li>
+		<li class="seat_16 B"><a href="#row_16" title="16B">16B</a></li>
+		<li class="seat_16 C"><a href="#row_16" title="16C">16C</a></li>
+		<li class="seat_16 D"><a href="#row_16" title="16D">16D</a></li>
+		<li class="seat_16 E"><a href="#row_16" title="16E">16E</a></li>
+		<li class="seat_16 F"><a href="#row_16" title="16F">16F</a></li>
+
+		<li class="seat_17 A"><a href="#row_17" title="17A">17A</a></li>
+		<li class="seat_17 B"><a href="#row_17" title="17B">17B</a></li>
+		<li class="seat_17 C"><a href="#row_17" title="17C">17C</a></li>
+		<li class="seat_17 D"><a href="#row_17" title="17D">17D</a></li>
+		<li class="seat_17 E"><a href="#row_17" title="17E">17E</a></li>
+		<li class="seat_17 F"><a href="#row_17" title="17F">17F</a></li>
+
+		<li class="seat_18 A"><a href="#row_18" title="18A">18A</a></li>
+		<li class="seat_18 B"><a href="#row_18" title="18B">18B</a></li>
+		<li class="seat_18 C"><a href="#row_18" title="18C">18C</a></li>
+		<li class="seat_18 D"><a href="#row_18" title="18D">18D</a></li>
+		<li class="seat_18 E"><a href="#row_18" title="18E">18E</a></li>
+		<li class="seat_18 F"><a href="#row_18" title="18F">18F</a></li>
+
+		<li class="seat_19 A"><a href="#row_19" title="19A">19A</a></li>
+		<li class="seat_19 B"><a href="#row_19" title="19B">19B</a></li>
+		<li class="seat_19 C"><a href="#row_19" title="19C">19C</a></li>
+		<li class="seat_19 D"><a href="#row_19" title="19D">19D</a></li>
+		<li class="seat_19 E"><a href="#row_19" title="19E">19E</a></li>
+		<li class="seat_19 F"><a href="#row_19" title="19F">19F</a></li>
+
+		<li class="seat_20 A"><a href="#row_20" title="20A">20A</a></li>
+		<li class="seat_20 B"><a href="#row_20" title="20B">20B</a></li>
+		<li class="seat_20 C"><a href="#row_20" title="20C">20C</a></li>
+		<li class="seat_20 D"><a href="#row_20" title="20D">20D</a></li>
+		<li class="seat_20 E"><a href="#row_20" title="20E">20E</a></li>
+		<li class="seat_20 F"><a href="#row_20" title="20F">20F</a></li>
+
+		<li class="seat_21 A"><a href="#row_21" title="21A">21A</a></li>
+		<li class="seat_21 B"><a href="#row_21" title="21B">21B</a></li>
+		<li class="seat_21 C"><a href="#row_21" title="21C">21C</a></li>
+		<li class="seat_21 D"><a href="#row_21" title="21D">21D</a></li>
+		<li class="seat_21 E"><a href="#row_21" title="21E">21E</a></li>
+		<li class="seat_21 F"><a href="#row_21" title="21F">21F</a></li>
+
+		<li class="seat_22 A"><a href="#row_22" title="22A">22A</a></li>
+		<li class="seat_22 B"><a href="#row_22" title="22B">22B</a></li>
+		<li class="seat_22 C"><a href="#row_22" title="22C">22C</a></li>
+		<li class="seat_22 D"><a href="#row_22" title="22D">22D</a></li>
+		<li class="seat_22 E"><a href="#row_22" title="22E">22E</a></li>
+		<li class="seat_22 F"><a href="#row_22" title="22F">22F</a></li>
+
+		<li class="seat_23 A"><a href="#row_23" title="23A">23A</a></li>
+		<li class="seat_23 B"><a href="#row_23" title="23B">23B</a></li>
+		<li class="seat_23 C"><a href="#row_23" title="23C">23C</a></li>
+		<li class="seat_23 D"><a href="#row_23" title="23D">23D</a></li>
+		<li class="seat_23 E"><a href="#row_23" title="23E">23E</a></li>
+		<li class="seat_23 F"><a href="#row_23" title="23F">23F</a></li>
+
+		<li class="seat_24 A"><a href="#row_24" title="24A">24A</a></li>
+		<li class="seat_24 B"><a href="#row_24" title="24B">24B</a></li>
+		<li class="seat_24 C"><a href="#row_24" title="24C">24C</a></li>
+		<li class="seat_24 D"><a href="#row_24" title="24D">24D</a></li>
+		<li class="seat_24 E"><a href="#row_24" title="24E">24E</a></li>
+		<li class="seat_24 F"><a href="#row_24" title="24F">24F</a></li>
+
+		<li class="seat_25 A"><a href="#row_25" title="25A">25A</a></li>
+		<li class="seat_25 B"><a href="#row_25" title="25B">25B</a></li>
+		<li class="seat_25 C"><a href="#row_25" title="25C">25C</a></li>
+		<li class="seat_25 D"><a href="#row_25" title="25D">25D</a></li>
+		<li class="seat_25 E"><a href="#row_25" title="25E">25E</a></li>
+		<li class="seat_25 F"><a href="#row_25" title="25F">25F</a></li>
+	</ul>
+	<!-- end #airplane -->
+	<ol id="tabs">
+		<li><a href="#row_01">01</a></li>
+		<li><a href="#row_02">02</a></li>
+		<li><a href="#row_03">03</a></li>
+		<li><a href="#row_04">04</a></li>
+		<li><a href="#row_05">05</a></li>
+		<li><a href="#row_06">06</a></li>
+		<li><a href="#row_07">07</a></li>
+		<li><a href="#row_08">08</a></li>
+		<li><a href="#row_09">09</a></li>
+		<li><a href="#row_10">10</a></li>
+		<li><a href="#row_11">11</a></li>
+		<li><a href="#row_12">12</a></li>
+		<li><a href="#row_13">13</a></li>
+		<li><a href="#row_14">14</a></li>
+		<li><a href="#row_15">15</a></li>
+		<li><a href="#row_16">16</a></li>
+		<li><a href="#row_17">17</a></li>
+		<li><a href="#row_18">18</a></li>
+		<li><a href="#row_19">19</a></li>
+		<li><a href="#row_20">20</a></li>
+		<li><a href="#row_21">21</a></li>
+		<li><a href="#row_22">22</a></li>
+		<li><a href="#row_23">23</a></li>
+		<li><a href="#row_24">24</a></li>
+		<li><a href="#row_25">25</a></li>
+	</ol>
+	<!-- end #tabs -->
+	<form action="" method="post">
+		<table cellspacing="0" id="passenger_details">
+			<thead>
+				<tr>
+					<th scope="col">
+						Seat
+					</th>
+					<th scope="col">
+						First name
+					</th>
+					<th scope="col">
+						Last name
+					</th>
+					<th scope="col">
+						Passport #
+					</th>
+					<th scope="col">
+						Baggage
+					</th>
+					<th scope="col">
+						Carry-ons
+					</th>
+					<th scope="col">
+						Meal
+					</th>
+				</tr>
+			</thead>
+			<tbody id="row_01">
+				<tr class="seat_01 A">
+					<td>
+						<strong>01A</strong>
+					</td>
+					<td>
+						<label for="first_name_01A">
+							First name
+						</label>
+						<input type="text" name="first_name_01A" id="first_name_01A" />
+					</td>
+					<td>
+						<label for="last_name_01A">
+							Last name
+						</label>
+						<input type="text" name="last_name_01A" id="last_name_01A" />
+					</td>
+					<td>
+						<label for="passport_01A">
+							Passport #
+						</label>
+						<input type="text" name="passport_01A" id="passport_01A" />
+					</td>
+					<td>
+						<label for="baggage_01A">
+							Baggage
+						</label>
+						<select name="baggage_01A" id="baggage_01A">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_01A">
+							Carry-ons
+						</label>
+						<select name="carry-ons_01A" id="carry-ons_01A">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_01A">
+							Meal
+						</label>
+						<select name="meal_01A" id="meal_01A">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_01 B">
+					<td>
+						<strong>01B</strong>
+					</td>
+					<td>
+						<label for="first_name_01B">
+							First name
+						</label>
+						<input type="text" name="first_name_01B" id="first_name_01B" />
+					</td>
+					<td>
+						<label for="last_name_01B">
+							Last name
+						</label>
+						<input type="text" name="last_name_01B" id="last_name_01B" />
+					</td>
+					<td>
+						<label for="passport_01B">
+							Passport #
+						</label>
+						<input type="text" name="passport_01B" id="passport_01B" />
+					</td>
+					<td>
+						<label for="baggage_01B">
+							Baggage
+						</label>
+						<select name="baggage_01B" id="baggage_01B">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_01B">
+							Carry-ons
+						</label>
+						<select name="carry-ons_01B" id="carry-ons_01B">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_01B">
+							Meal
+						</label>
+						<select name="meal_01B" id="meal_01B">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_01 C">
+					<td>
+						<strong>01C</strong>
+					</td>
+					<td>
+						<label for="first_name_01C">
+							First name
+						</label>
+						<input type="text" name="first_name_01C" id="first_name_01C" />
+					</td>
+					<td>
+						<label for="last_name_01C">
+							Last name
+						</label>
+						<input type="text" name="last_name_01C" id="last_name_01C" />
+					</td>
+					<td>
+						<label for="passport_01C">
+							Passport #
+						</label>
+						<input type="text" name="passport_01C" id="passport_01C" />
+					</td>
+					<td>
+						<label for="baggage_01C">
+							Baggage
+						</label>
+						<select name="baggage_01C" id="baggage_01C">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_01C">
+							Carry-ons
+						</label>
+						<select name="carry-ons_01C" id="carry-ons_01C">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_01C">
+							Meal
+						</label>
+						<select name="meal_01C" id="meal_01C">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_01 D">
+					<td>
+						<strong>01D</strong>
+					</td>
+					<td>
+						<label for="first_name_01D">
+							First name
+						</label>
+						<input type="text" name="first_name_01D" id="first_name_01D" />
+					</td>
+					<td>
+						<label for="last_name_01D">
+							Last name
+						</label>
+						<input type="text" name="last_name_01D" id="last_name_01D" />
+					</td>
+					<td>
+						<label for="passport_01D">
+							Passport #
+						</label>
+						<input type="text" name="passport_01D" id="passport_01D" />
+					</td>
+					<td>
+						<label for="baggage_01D">
+							Baggage
+						</label>
+						<select name="baggage_01D" id="baggage_01D">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_01D">
+							Carry-ons
+						</label>
+						<select name="carry-ons_01D" id="carry-ons_01D">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_01D">
+							Meal
+						</label>
+						<select name="meal_01D" id="meal_01D">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_01 E">
+					<td>
+						<strong>01E</strong>
+					</td>
+					<td>
+						<label for="first_name_01E">
+							First name
+						</label>
+						<input type="text" name="first_name_01E" id="first_name_01E" />
+					</td>
+					<td>
+						<label for="last_name_01E">
+							Last name
+						</label>
+						<input type="text" name="last_name_01E" id="last_name_01E" />
+					</td>
+					<td>
+						<label for="passport_01E">
+							Passport #
+						</label>
+						<input type="text" name="passport_01E" id="passport_01E" />
+					</td>
+					<td>
+						<label for="baggage_01E">
+							Baggage
+						</label>
+						<select name="baggage_01E" id="baggage_01E">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_01E">
+							Carry-ons
+						</label>
+						<select name="carry-ons_01E" id="carry-ons_01E">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_01E">
+							Meal
+						</label>
+						<select name="meal_01E" id="meal_01E">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_01 F">
+					<td>
+						<strong>01F</strong>
+					</td>
+					<td>
+						<label for="first_name_01F">
+							First name
+						</label>
+						<input type="text" name="first_name_01F" id="first_name_01F" />
+					</td>
+					<td>
+						<label for="last_name_01F">
+							Last name
+						</label>
+						<input type="text" name="last_name_01F" id="last_name_01F" />
+					</td>
+					<td>
+						<label for="passport_01F">
+							Passport #
+						</label>
+						<input type="text" name="passport_01F" id="passport_01F" />
+					</td>
+					<td>
+						<label for="baggage_01F">
+							Baggage
+						</label>
+						<select name="baggage_01F" id="baggage_01F">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_01F">
+							Carry-ons
+						</label>
+						<select name="carry-ons_01F" id="carry-ons_01F">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_01F">
+							Meal
+						</label>
+						<select name="meal_01F" id="meal_01F">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+			</tbody>
+			<!-- end #row_01 -->
+			<tbody id="row_02">
+				<tr class="seat_02 A">
+					<td>
+						<strong>02A</strong>
+					</td>
+					<td>
+						<label for="first_name_02A">
+							First name
+						</label>
+						<input type="text" name="first_name_02A" id="first_name_02A" />
+					</td>
+					<td>
+						<label for="last_name_02A">
+							Last name
+						</label>
+						<input type="text" name="last_name_02A" id="last_name_02A" />
+					</td>
+					<td>
+						<label for="passport_02A">
+							Passport #
+						</label>
+						<input type="text" name="passport_02A" id="passport_02A" />
+					</td>
+					<td>
+						<label for="baggage_02A">
+							Baggage
+						</label>
+						<select name="baggage_02A" id="baggage_02A">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_02A">
+							Carry-ons
+						</label>
+						<select name="carry-ons_02A" id="carry-ons_02A">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_02A">
+							Meal
+						</label>
+						<select name="meal_02A" id="meal_02A">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_02 B">
+					<td>
+						<strong>02B</strong>
+					</td>
+					<td>
+						<label for="first_name_02B">
+							First name
+						</label>
+						<input type="text" name="first_name_02B" id="first_name_02B" />
+					</td>
+					<td>
+						<label for="last_name_02B">
+							Last name
+						</label>
+						<input type="text" name="last_name_02B" id="last_name_02B" />
+					</td>
+					<td>
+						<label for="passport_02B">
+							Passport #
+						</label>
+						<input type="text" name="passport_02B" id="passport_02B" />
+					</td>
+					<td>
+						<label for="baggage_02B">
+							Baggage
+						</label>
+						<select name="baggage_02B" id="baggage_02B">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_02B">
+							Carry-ons
+						</label>
+						<select name="carry-ons_02B" id="carry-ons_02B">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_02B">
+							Meal
+						</label>
+						<select name="meal_02B" id="meal_02B">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_02 C">
+					<td>
+						<strong>02C</strong>
+					</td>
+					<td>
+						<label for="first_name_02C">
+							First name
+						</label>
+						<input type="text" name="first_name_02C" id="first_name_02C" />
+					</td>
+					<td>
+						<label for="last_name_02C">
+							Last name
+						</label>
+						<input type="text" name="last_name_02C" id="last_name_02C" />
+					</td>
+					<td>
+						<label for="passport_02C">
+							Passport #
+						</label>
+						<input type="text" name="passport_02C" id="passport_02C" />
+					</td>
+					<td>
+						<label for="baggage_02C">
+							Baggage
+						</label>
+						<select name="baggage_02C" id="baggage_02C">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_02C">
+							Carry-ons
+						</label>
+						<select name="carry-ons_02C" id="carry-ons_02C">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_02C">
+							Meal
+						</label>
+						<select name="meal_02C" id="meal_02C">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_02 D">
+					<td>
+						<strong>02D</strong>
+					</td>
+					<td>
+						<label for="first_name_02D">
+							First name
+						</label>
+						<input type="text" name="first_name_02D" id="first_name_02D" />
+					</td>
+					<td>
+						<label for="last_name_02D">
+							Last name
+						</label>
+						<input type="text" name="last_name_02D" id="last_name_02D" />
+					</td>
+					<td>
+						<label for="passport_02D">
+							Passport #
+						</label>
+						<input type="text" name="passport_02D" id="passport_02D" />
+					</td>
+					<td>
+						<label for="baggage_02D">
+							Baggage
+						</label>
+						<select name="baggage_02D" id="baggage_02D">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_02D">
+							Carry-ons
+						</label>
+						<select name="carry-ons_02D" id="carry-ons_02D">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_02D">
+							Meal
+						</label>
+						<select name="meal_02D" id="meal_02D">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_02 E">
+					<td>
+						<strong>02E</strong>
+					</td>
+					<td>
+						<label for="first_name_02E">
+							First name
+						</label>
+						<input type="text" name="first_name_02E" id="first_name_02E" />
+					</td>
+					<td>
+						<label for="last_name_02E">
+							Last name
+						</label>
+						<input type="text" name="last_name_02E" id="last_name_02E" />
+					</td>
+					<td>
+						<label for="passport_02E">
+							Passport #
+						</label>
+						<input type="text" name="passport_02E" id="passport_02E" />
+					</td>
+					<td>
+						<label for="baggage_02E">
+							Baggage
+						</label>
+						<select name="baggage_02E" id="baggage_02E">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_02E">
+							Carry-ons
+						</label>
+						<select name="carry-ons_02E" id="carry-ons_02E">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_02E">
+							Meal
+						</label>
+						<select name="meal_02E" id="meal_02E">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_02 F">
+					<td>
+						<strong>02F</strong>
+					</td>
+					<td>
+						<label for="first_name_02F">
+							First name
+						</label>
+						<input type="text" name="first_name_02F" id="first_name_02F" />
+					</td>
+					<td>
+						<label for="last_name_02F">
+							Last name
+						</label>
+						<input type="text" name="last_name_02F" id="last_name_02F" />
+					</td>
+					<td>
+						<label for="passport_02F">
+							Passport #
+						</label>
+						<input type="text" name="passport_02F" id="passport_02F" />
+					</td>
+					<td>
+						<label for="baggage_02F">
+							Baggage
+						</label>
+						<select name="baggage_02F" id="baggage_02F">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_02F">
+							Carry-ons
+						</label>
+						<select name="carry-ons_02F" id="carry-ons_02F">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_02F">
+							Meal
+						</label>
+						<select name="meal_02F" id="meal_02F">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+			</tbody>
+			<!-- end #row_02 -->
+			<tbody id="row_03">
+				<tr class="seat_03 A">
+					<td>
+						<strong>03A</strong>
+					</td>
+					<td>
+						<label for="first_name_03A">
+							First name
+						</label>
+						<input type="text" name="first_name_03A" id="first_name_03A" />
+					</td>
+					<td>
+						<label for="last_name_03A">
+							Last name
+						</label>
+						<input type="text" name="last_name_03A" id="last_name_03A" />
+					</td>
+					<td>
+						<label for="passport_03A">
+							Passport #
+						</label>
+						<input type="text" name="passport_03A" id="passport_03A" />
+					</td>
+					<td>
+						<label for="baggage_03A">
+							Baggage
+						</label>
+						<select name="baggage_03A" id="baggage_03A">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_03A">
+							Carry-ons
+						</label>
+						<select name="carry-ons_03A" id="carry-ons_03A">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_03A">
+							Meal
+						</label>
+						<select name="meal_03A" id="meal_03A">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_03 B">
+					<td>
+						<strong>03B</strong>
+					</td>
+					<td>
+						<label for="first_name_03B">
+							First name
+						</label>
+						<input type="text" name="first_name_03B" id="first_name_03B" />
+					</td>
+					<td>
+						<label for="last_name_03B">
+							Last name
+						</label>
+						<input type="text" name="last_name_03B" id="last_name_03B" />
+					</td>
+					<td>
+						<label for="passport_03B">
+							Passport #
+						</label>
+						<input type="text" name="passport_03B" id="passport_03B" />
+					</td>
+					<td>
+						<label for="baggage_03B">
+							Baggage
+						</label>
+						<select name="baggage_03B" id="baggage_03B">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_03B">
+							Carry-ons
+						</label>
+						<select name="carry-ons_03B" id="carry-ons_03B">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_03B">
+							Meal
+						</label>
+						<select name="meal_03B" id="meal_03B">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_03 C">
+					<td>
+						<strong>03C</strong>
+					</td>
+					<td>
+						<label for="first_name_03C">
+							First name
+						</label>
+						<input type="text" name="first_name_03C" id="first_name_03C" />
+					</td>
+					<td>
+						<label for="last_name_03C">
+							Last name
+						</label>
+						<input type="text" name="last_name_03C" id="last_name_03C" />
+					</td>
+					<td>
+						<label for="passport_03C">
+							Passport #
+						</label>
+						<input type="text" name="passport_03C" id="passport_03C" />
+					</td>
+					<td>
+						<label for="baggage_03C">
+							Baggage
+						</label>
+						<select name="baggage_03C" id="baggage_03C">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_03C">
+							Carry-ons
+						</label>
+						<select name="carry-ons_03C" id="carry-ons_03C">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_03C">
+							Meal
+						</label>
+						<select name="meal_03C" id="meal_03C">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_03 D">
+					<td>
+						<strong>03D</strong>
+					</td>
+					<td>
+						<label for="first_name_03D">
+							First name
+						</label>
+						<input type="text" name="first_name_03D" id="first_name_03D" />
+					</td>
+					<td>
+						<label for="last_name_03D">
+							Last name
+						</label>
+						<input type="text" name="last_name_03D" id="last_name_03D" />
+					</td>
+					<td>
+						<label for="passport_03D">
+							Passport #
+						</label>
+						<input type="text" name="passport_03D" id="passport_03D" />
+					</td>
+					<td>
+						<label for="baggage_03D">
+							Baggage
+						</label>
+						<select name="baggage_03D" id="baggage_03D">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_03D">
+							Carry-ons
+						</label>
+						<select name="carry-ons_03D" id="carry-ons_03D">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_03D">
+							Meal
+						</label>
+						<select name="meal_03D" id="meal_03D">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_03 E">
+					<td>
+						<strong>03E</strong>
+					</td>
+					<td>
+						<label for="first_name_03E">
+							First name
+						</label>
+						<input type="text" name="first_name_03E" id="first_name_03E" />
+					</td>
+					<td>
+						<label for="last_name_03E">
+							Last name
+						</label>
+						<input type="text" name="last_name_03E" id="last_name_03E" />
+					</td>
+					<td>
+						<label for="passport_03E">
+							Passport #
+						</label>
+						<input type="text" name="passport_03E" id="passport_03E" />
+					</td>
+					<td>
+						<label for="baggage_03E">
+							Baggage
+						</label>
+						<select name="baggage_03E" id="baggage_03E">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_03E">
+							Carry-ons
+						</label>
+						<select name="carry-ons_03E" id="carry-ons_03E">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_03E">
+							Meal
+						</label>
+						<select name="meal_03E" id="meal_03E">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_03 F">
+					<td>
+						<strong>03F</strong>
+					</td>
+					<td>
+						<label for="first_name_03F">
+							First name
+						</label>
+						<input type="text" name="first_name_03F" id="first_name_03F" />
+					</td>
+					<td>
+						<label for="last_name_03F">
+							Last name
+						</label>
+						<input type="text" name="last_name_03F" id="last_name_03F" />
+					</td>
+					<td>
+						<label for="passport_03F">
+							Passport #
+						</label>
+						<input type="text" name="passport_03F" id="passport_03F" />
+					</td>
+					<td>
+						<label for="baggage_03F">
+							Baggage
+						</label>
+						<select name="baggage_03F" id="baggage_03F">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_03F">
+							Carry-ons
+						</label>
+						<select name="carry-ons_03F" id="carry-ons_03F">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_03F">
+							Meal
+						</label>
+						<select name="meal_03F" id="meal_03F">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+			</tbody>
+			<!-- end #row_03 -->
+			<tbody id="row_04">
+				<tr class="seat_04 A">
+					<td>
+						<strong>04A</strong>
+					</td>
+					<td>
+						<label for="first_name_04A">
+							First name
+						</label>
+						<input type="text" name="first_name_04A" id="first_name_04A" />
+					</td>
+					<td>
+						<label for="last_name_04A">
+							Last name
+						</label>
+						<input type="text" name="last_name_04A" id="last_name_04A" />
+					</td>
+					<td>
+						<label for="passport_04A">
+							Passport #
+						</label>
+						<input type="text" name="passport_04A" id="passport_04A" />
+					</td>
+					<td>
+						<label for="baggage_04A">
+							Baggage
+						</label>
+						<select name="baggage_04A" id="baggage_04A">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_04A">
+							Carry-ons
+						</label>
+						<select name="carry-ons_04A" id="carry-ons_04A">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_04A">
+							Meal
+						</label>
+						<select name="meal_04A" id="meal_04A">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_04 B">
+					<td>
+						<strong>04B</strong>
+					</td>
+					<td>
+						<label for="first_name_04B">
+							First name
+						</label>
+						<input type="text" name="first_name_04B" id="first_name_04B" />
+					</td>
+					<td>
+						<label for="last_name_04B">
+							Last name
+						</label>
+						<input type="text" name="last_name_04B" id="last_name_04B" />
+					</td>
+					<td>
+						<label for="passport_04B">
+							Passport #
+						</label>
+						<input type="text" name="passport_04B" id="passport_04B" />
+					</td>
+					<td>
+						<label for="baggage_04B">
+							Baggage
+						</label>
+						<select name="baggage_04B" id="baggage_04B">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_04B">
+							Carry-ons
+						</label>
+						<select name="carry-ons_04B" id="carry-ons_04B">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_04B">
+							Meal
+						</label>
+						<select name="meal_04B" id="meal_04B">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_04 C">
+					<td>
+						<strong>04C</strong>
+					</td>
+					<td>
+						<label for="first_name_04C">
+							First name
+						</label>
+						<input type="text" name="first_name_04C" id="first_name_04C" />
+					</td>
+					<td>
+						<label for="last_name_04C">
+							Last name
+						</label>
+						<input type="text" name="last_name_04C" id="last_name_04C" />
+					</td>
+					<td>
+						<label for="passport_04C">
+							Passport #
+						</label>
+						<input type="text" name="passport_04C" id="passport_04C" />
+					</td>
+					<td>
+						<label for="baggage_04C">
+							Baggage
+						</label>
+						<select name="baggage_04C" id="baggage_04C">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_04C">
+							Carry-ons
+						</label>
+						<select name="carry-ons_04C" id="carry-ons_04C">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_04C">
+							Meal
+						</label>
+						<select name="meal_04C" id="meal_04C">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_04 D">
+					<td>
+						<strong>04D</strong>
+					</td>
+					<td>
+						<label for="first_name_04D">
+							First name
+						</label>
+						<input type="text" name="first_name_04D" id="first_name_04D" />
+					</td>
+					<td>
+						<label for="last_name_04D">
+							Last name
+						</label>
+						<input type="text" name="last_name_04D" id="last_name_04D" />
+					</td>
+					<td>
+						<label for="passport_04D">
+							Passport #
+						</label>
+						<input type="text" name="passport_04D" id="passport_04D" />
+					</td>
+					<td>
+						<label for="baggage_04D">
+							Baggage
+						</label>
+						<select name="baggage_04D" id="baggage_04D">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_04D">
+							Carry-ons
+						</label>
+						<select name="carry-ons_04D" id="carry-ons_04D">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_04D">
+							Meal
+						</label>
+						<select name="meal_04D" id="meal_04D">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_04 E">
+					<td>
+						<strong>04E</strong>
+					</td>
+					<td>
+						<label for="first_name_04E">
+							First name
+						</label>
+						<input type="text" name="first_name_04E" id="first_name_04E" />
+					</td>
+					<td>
+						<label for="last_name_04E">
+							Last name
+						</label>
+						<input type="text" name="last_name_04E" id="last_name_04E" />
+					</td>
+					<td>
+						<label for="passport_04E">
+							Passport #
+						</label>
+						<input type="text" name="passport_04E" id="passport_04E" />
+					</td>
+					<td>
+						<label for="baggage_04E">
+							Baggage
+						</label>
+						<select name="baggage_04E" id="baggage_04E">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_04E">
+							Carry-ons
+						</label>
+						<select name="carry-ons_04E" id="carry-ons_04E">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_04E">
+							Meal
+						</label>
+						<select name="meal_04E" id="meal_04E">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_04 F">
+					<td>
+						<strong>04F</strong>
+					</td>
+					<td>
+						<label for="first_name_04F">
+							First name
+						</label>
+						<input type="text" name="first_name_04F" id="first_name_04F" />
+					</td>
+					<td>
+						<label for="last_name_04F">
+							Last name
+						</label>
+						<input type="text" name="last_name_04F" id="last_name_04F" />
+					</td>
+					<td>
+						<label for="passport_04F">
+							Passport #
+						</label>
+						<input type="text" name="passport_04F" id="passport_04F" />
+					</td>
+					<td>
+						<label for="baggage_04F">
+							Baggage
+						</label>
+						<select name="baggage_04F" id="baggage_04F">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_04F">
+							Carry-ons
+						</label>
+						<select name="carry-ons_04F" id="carry-ons_04F">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_04F">
+							Meal
+						</label>
+						<select name="meal_04F" id="meal_04F">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+			</tbody>
+			<!-- end row_04 -->
+			<tbody id="row_05">
+				<tr class="seat_05 A">
+					<td>
+						<strong>05A</strong>
+					</td>
+					<td>
+						<label for="first_name_05A">
+							First name
+						</label>
+						<input type="text" name="first_name_05A" id="first_name_05A" />
+					</td>
+					<td>
+						<label for="last_name_05A">
+							Last name
+						</label>
+						<input type="text" name="last_name_05A" id="last_name_05A" />
+					</td>
+					<td>
+						<label for="passport_05A">
+							Passport #
+						</label>
+						<input type="text" name="passport_05A" id="passport_05A" />
+					</td>
+					<td>
+						<label for="baggage_05A">
+							Baggage
+						</label>
+						<select name="baggage_05A" id="baggage_05A">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_05A">
+							Carry-ons
+						</label>
+						<select name="carry-ons_05A" id="carry-ons_05A">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_05A">
+							Meal
+						</label>
+						<select name="meal_05A" id="meal_05A">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_05 B">
+					<td>
+						<strong>05B</strong>
+					</td>
+					<td>
+						<label for="first_name_05B">
+							First name
+						</label>
+						<input type="text" name="first_name_05B" id="first_name_05B" />
+					</td>
+					<td>
+						<label for="last_name_05B">
+							Last name
+						</label>
+						<input type="text" name="last_name_05B" id="last_name_05B" />
+					</td>
+					<td>
+						<label for="passport_05B">
+							Passport #
+						</label>
+						<input type="text" name="passport_05B" id="passport_05B" />
+					</td>
+					<td>
+						<label for="baggage_05B">
+							Baggage
+						</label>
+						<select name="baggage_05B" id="baggage_05B">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_05B">
+							Carry-ons
+						</label>
+						<select name="carry-ons_05B" id="carry-ons_05B">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_05B">
+							Meal
+						</label>
+						<select name="meal_05B" id="meal_05B">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_05 C">
+					<td>
+						<strong>05C</strong>
+					</td>
+					<td>
+						<label for="first_name_05C">
+							First name
+						</label>
+						<input type="text" name="first_name_05C" id="first_name_05C" />
+					</td>
+					<td>
+						<label for="last_name_05C">
+							Last name
+						</label>
+						<input type="text" name="last_name_05C" id="last_name_05C" />
+					</td>
+					<td>
+						<label for="passport_05C">
+							Passport #
+						</label>
+						<input type="text" name="passport_05C" id="passport_05C" />
+					</td>
+					<td>
+						<label for="baggage_05C">
+							Baggage
+						</label>
+						<select name="baggage_05C" id="baggage_05C">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_05C">
+							Carry-ons
+						</label>
+						<select name="carry-ons_05C" id="carry-ons_05C">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_05C">
+							Meal
+						</label>
+						<select name="meal_05C" id="meal_05C">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_05 D">
+					<td>
+						<strong>05D</strong>
+					</td>
+					<td>
+						<label for="first_name_05D">
+							First name
+						</label>
+						<input type="text" name="first_name_05D" id="first_name_05D" />
+					</td>
+					<td>
+						<label for="last_name_05D">
+							Last name
+						</label>
+						<input type="text" name="last_name_05D" id="last_name_05D" />
+					</td>
+					<td>
+						<label for="passport_05D">
+							Passport #
+						</label>
+						<input type="text" name="passport_05D" id="passport_05D" />
+					</td>
+					<td>
+						<label for="baggage_05D">
+							Baggage
+						</label>
+						<select name="baggage_05D" id="baggage_05D">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_05D">
+							Carry-ons
+						</label>
+						<select name="carry-ons_05D" id="carry-ons_05D">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_05D">
+							Meal
+						</label>
+						<select name="meal_05D" id="meal_05D">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_05 E">
+					<td>
+						<strong>05E</strong>
+					</td>
+					<td>
+						<label for="first_name_05E">
+							First name
+						</label>
+						<input type="text" name="first_name_05E" id="first_name_05E" />
+					</td>
+					<td>
+						<label for="last_name_05E">
+							Last name
+						</label>
+						<input type="text" name="last_name_05E" id="last_name_05E" />
+					</td>
+					<td>
+						<label for="passport_05E">
+							Passport #
+						</label>
+						<input type="text" name="passport_05E" id="passport_05E" />
+					</td>
+					<td>
+						<label for="baggage_05E">
+							Baggage
+						</label>
+						<select name="baggage_05E" id="baggage_05E">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_05E">
+							Carry-ons
+						</label>
+						<select name="carry-ons_05E" id="carry-ons_05E">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_05E">
+							Meal
+						</label>
+						<select name="meal_05E" id="meal_05E">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_05 F">
+					<td>
+						<strong>05F</strong>
+					</td>
+					<td>
+						<label for="first_name_05F">
+							First name
+						</label>
+						<input type="text" name="first_name_05F" id="first_name_05F" />
+					</td>
+					<td>
+						<label for="last_name_05F">
+							Last name
+						</label>
+						<input type="text" name="last_name_05F" id="last_name_05F" />
+					</td>
+					<td>
+						<label for="passport_05F">
+							Passport #
+						</label>
+						<input type="text" name="passport_05F" id="passport_05F" />
+					</td>
+					<td>
+						<label for="baggage_05F">
+							Baggage
+						</label>
+						<select name="baggage_05F" id="baggage_05F">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_05F">
+							Carry-ons
+						</label>
+						<select name="carry-ons_05F" id="carry-ons_05F">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_05F">
+							Meal
+						</label>
+						<select name="meal_05F" id="meal_05F">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+			</tbody>
+			<!-- end #row_05 -->
+			<tbody id="row_06">
+				<tr class="seat_06 A">
+					<td>
+						<strong>06A</strong>
+					</td>
+					<td>
+						<label for="first_name_06A">
+							First name
+						</label>
+						<input type="text" name="first_name_06A" id="first_name_06A" />
+					</td>
+					<td>
+						<label for="last_name_06A">
+							Last name
+						</label>
+						<input type="text" name="last_name_06A" id="last_name_06A" />
+					</td>
+					<td>
+						<label for="passport_06A">
+							Passport #
+						</label>
+						<input type="text" name="passport_06A" id="passport_06A" />
+					</td>
+					<td>
+						<label for="baggage_06A">
+							Baggage
+						</label>
+						<select name="baggage_06A" id="baggage_06A">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_06A">
+							Carry-ons
+						</label>
+						<select name="carry-ons_06A" id="carry-ons_06A">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_06A">
+							Meal
+						</label>
+						<select name="meal_06A" id="meal_06A">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_06 B">
+					<td>
+						<strong>06B</strong>
+					</td>
+					<td>
+						<label for="first_name_06B">
+							First name
+						</label>
+						<input type="text" name="first_name_06B" id="first_name_06B" />
+					</td>
+					<td>
+						<label for="last_name_06B">
+							Last name
+						</label>
+						<input type="text" name="last_name_06B" id="last_name_06B" />
+					</td>
+					<td>
+						<label for="passport_06B">
+							Passport #
+						</label>
+						<input type="text" name="passport_06B" id="passport_06B" />
+					</td>
+					<td>
+						<label for="baggage_06B">
+							Baggage
+						</label>
+						<select name="baggage_06B" id="baggage_06B">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_06B">
+							Carry-ons
+						</label>
+						<select name="carry-ons_06B" id="carry-ons_06B">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_06B">
+							Meal
+						</label>
+						<select name="meal_06B" id="meal_06B">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_06 C">
+					<td>
+						<strong>06C</strong>
+					</td>
+					<td>
+						<label for="first_name_06C">
+							First name
+						</label>
+						<input type="text" name="first_name_06C" id="first_name_06C" />
+					</td>
+					<td>
+						<label for="last_name_06C">
+							Last name
+						</label>
+						<input type="text" name="last_name_06C" id="last_name_06C" />
+					</td>
+					<td>
+						<label for="passport_06C">
+							Passport #
+						</label>
+						<input type="text" name="passport_06C" id="passport_06C" />
+					</td>
+					<td>
+						<label for="baggage_06C">
+							Baggage
+						</label>
+						<select name="baggage_06C" id="baggage_06C">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_06C">
+							Carry-ons
+						</label>
+						<select name="carry-ons_06C" id="carry-ons_06C">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_06C">
+							Meal
+						</label>
+						<select name="meal_06C" id="meal_06C">
+							<option value="any" selected="selected">Any</option>
+							<option value="beef">Beef</option>
+							<option value="chicken">Chicken</option>
+							<option value="fish">Fish</option>
+							<option value="Veggie">Veggie</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="seat_06 D">
+					<td>
+						<strong>06D</strong>
+					</td>
+					<td>
+						<label for="first_name_06D">
+							First name
+						</label>
+						<input type="text" name="first_name_06D" id="first_name_06D" />
+					</td>
+					<td>
+						<label for="last_name_06D">
+							Last name
+						</label>
+						<input type="text" name="last_name_06D" id="last_name_06D" />
+					</td>
+					<td>
+						<label for="passport_06D">
+							Passport #
+						</label>
+						<input type="text" name="passport_06D" id="passport_06D" />
+					</td>
+					<td>
+						<label for="baggage_06D">
+							Baggage
+						</label>
+						<select name="baggage_06D" id="baggage_06D">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="carry-ons_06D">
+							Carry-ons
+						</label>
+						<select name="carry-ons_06D" id="carry-ons_06D">
+							<option value="0" selected="selected">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</td>
+					<td>
+						<label for="meal_06D">
+							Meal
+						</label>
+						<select name="meal_06D" id="meal_06D">
+							<option value="any" selected="selected">Any</option>
